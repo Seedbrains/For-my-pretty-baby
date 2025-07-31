@@ -35,13 +35,13 @@
 
     .page {
       display: none;
-      padding: 20px;
+      padding: 25px;
       border: 2px dashed pink;
       margin: 0 auto;
-      width: 90%;
-      max-width: 500px;
+      width: 95%;
+      max-width: 600px;
       background-color: white;
-      border-radius: 20px;
+      border-radius: 25px;
       box-sizing: border-box;
     }
 
@@ -49,17 +49,32 @@
       display: block;
     }
 
+    h1 {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 18px;
+      margin: 10px 0;
+    }
+
     button {
       background-color: #ff6eb4;
       color: white;
       font-family: 'Comic Sans MS', cursive;
-      padding: 12px 24px;
+      padding: 16px 28px;
       border: none;
-      border-radius: 15px;
-      font-size: 16px;
+      border-radius: 18px;
+      font-size: 18px;
       cursor: pointer;
       transition: transform 0.2s ease, background-color 0.2s ease;
-      margin: 8px;
+      margin: 10px;
     }
 
     button:hover {
@@ -68,15 +83,15 @@
 
     .main-img, .pretty {
       width: 100%;
-      max-width: 220px;
+      max-width: 280px;
       border-radius: 20px;
-      margin-bottom: 15px;
+      margin-bottom: 20px;
       transition: transform 0.2s ease;
       box-shadow: 0 4px 12px rgba(255, 110, 180, 0.3);
     }
 
     .pretty {
-      max-width: 300px;
+      max-width: 350px;
     }
 
     .main-img:hover, .pretty:hover {
@@ -84,29 +99,36 @@
     }
 
     .message {
-      font-size: 16px;
-      line-height: 1.5;
+      font-size: 18px;
+      line-height: 1.7;
       text-align: left;
-      padding: 0 10px;
+      padding: 0 15px;
     }
 
     @media screen and (max-width: 500px) {
-      .message {
-        font-size: 15px;
-        text-align: center;
+      h1 {
+        font-size: 28px;
+      }
+
+      h2 {
+        font-size: 24px;
+      }
+
+      p, .message {
+        font-size: 17px;
       }
 
       button {
-        font-size: 14px;
-        padding: 10px 20px;
-      }
-
-      h1, h2 {
-        font-size: 20px;
+        font-size: 16px;
+        padding: 14px 24px;
       }
 
       .main-img, .pretty {
-        max-width: 90%;
+        max-width: 95%;
+      }
+
+      .message {
+        text-align: center;
       }
     }
   </style>
@@ -136,14 +158,14 @@
       <img src="https://drive.google.com/thumbnail?id=194HodSF_UKqP9_f1-4yMxyzpg3fwTgek" class="pretty" />
       <h2>To my pretty baby (*¯ ³¯*)♡</h2>
       <p class="message">
-        Hiii my babyyyy, it's national's girlfriend day and of course I want to show my love and appreciation for you through this lil virtual love letter.<br>
-        Still sad about the fact na even though it's supposed to be your day this is as much as I can do and maybe some ordered food... I would've love to take you out on a date<br>
+        Hiii my babyyyy, it's national's girlfriend day and of course I want to show my love and appreciation for you through this lil virtual love letter.<br><br>
+        Still sad about the fact na even though it's supposed to be your day this is as much as I can do and maybe some ordered food... I would've love to take you out on a date,<br>
         cuddle you all day long, gives you lots and lots of hugs and kisses and care for you everyday.<br><br>
-        I know things are pretty tough, shaky and stressful these past weeks, we get into arguments and tampuhan from time to time which totally normal and I wouldn't change that for the world. <br>
-        I'd rather have the all the downs and all the ups with you than anything else in the world.<br><br>
-        I love you babyy, your pretty eyes, your pretty face, your smile, your voice, your cute laugh, the random toughts and questions, the cute faces you make,<br>
-        The sudden emotes and dance moves, your hugs and kisses I miss so much :<, I love everything about you (you're so hot and sexy and cute and pretty and and and).<br><br>
-        You're the best girlfriend ever babyy, I love you so much mwaamwaa!!! ❤ (ɔˆз(ˆ⌣ˆc) <- that is us
+        I know things are pretty tough, shaky and stressful these past weeks, we get into arguments and tampuhan from time to time which is totally normal and I wouldn't change that for the world. <br>
+        I'd rather have all the downs and all the ups with you than anything else in the world.<br><br>
+        I love you babyy, your pretty eyes, your pretty face, your smile, your voice, your cute laugh, the random thoughts and questions, the cute faces you make,<br>
+        the sudden emotes and dance moves, your hugs and kisses I miss so much :<, I love everything about you (you're so hot and sexy and cute and pretty and and and).<br><br>
+        You're the best girlfriend ever babyy, I love you so much mwaamwaa!!! ❤ (ɔˆз(ˆ⌣ˆc) ← that is us
       </p>
       <button onclick="goToPage(1)">Start Over</button>
     </div>
