@@ -1,0 +1,126 @@
+<title>For my pretty baby Chae</title>
+
+<div id="page1" class="page">
+  <img src="https://i.pinimg.com/736x/df/f7/0d/dff70dd3bff3e022657f344690fcff4d.jpg" class="main-img" />
+  <h1>HAPPY NATIONAL GIRLFRIEND DAY</h1>
+
+  <p>Click the next button!! ⸜(｡˃ ᵕ ˂ )⸝♡♥</p>
+  <button onclick="goToPage(2)">Next!!</button>
+</div>
+
+<!-- Page 2: Envelope -->
+<div id="page2" class="page hidden">
+  <img src="https://i.pinimg.com/736x/b3/1e/a2/b31ea2ccc7eedc0a2416ae0540fdefb6.jpg" class="main-img" />
+  <h2>Do you want to open it?</h2>
+  <p>	☆⌒(≧▽​° )</p>
+  <button onclick="goToPage(3)">Open it</button>
+  <button onclick="goToPage(4)">No ty</button>
+</div>
+
+<!-- Page 3: Love Letter -->
+<div id="page3" class="page hidden">
+  <img src="https://drive.google.com/thumbnail?id=194HodSF_UKqP9_f1-4yMxyzpg3fwTgek" class="pretty" />
+  <h2>To my pretty baby 	(*¯ ³¯*)♡</h2>
+  <p class="message">
+    Hiii my babyyyy, it's national's girlfriend day and of course I want to show my love and appreciation for you through this lil virtual love letter.<br>
+	Still sad about the fact na even though it's supposed to be your day this is as much as I can do and maybe some ordered food... I would've love to take you out on a date<br>
+	cuddle you all day long, gives you lots and lots of hugs and kisses and care for you everyday.<br>
+	<br>
+	I know things are pretty tough, shaky and stressful these past weeks, we get into arguments and tampuhan from time to time which totally normal and I wouldn't change that for the world. <br>
+	I'd rather have the all the downs and all the ups with you than anything else in the world.<br>
+	<br>
+	I love you babyy, your pretty eyes, your pretty face, your smile, your voice, your cute laugh, the random toughts and questions, the cute faces you make,<br>
+	The sudden emotes and dance moves, your hugs and kisses I miss so much :<, I love everything about you (you're so hot and sexy and cute and pretty and and and).<br>
+	<br>
+	You're the best girlfriend ever babyy, I love you so much mwaamwaa!!! 	❤ (ɔˆз(ˆ⌣ˆc) <- that is us
+  </p>
+  <button onclick="goToPage(1)">Start Over</button>
+</div>
+
+
+<!-- Page 4: Sad Response -->
+<div id="page4" class="page hidden">
+  <img src="https://i.pinimg.com/736x/ec/f5/9d/ecf59d311c75ee716936601be8eca605.jpg" class="main-img" />
+  <h2>Awww... Please..? (╯︵╰,)</h2>
+  <button onclick="goToPage(2)">Again..?</button>
+</div>
+
+<style>
+body {
+  background: url("https://static.vecteezy.com/system/resources/previews/027/713/210/non_2x/cute-pink-bow-seamless-pattern-with-pastel-pink-dots-on-white-background-vector.jpg");
+  font-family: 'Comic Sans MS', cursive;
+  text-align: center;
+  color: #ff6eb4;
+}
+
+.page {
+  display: none;
+  padding: 20px;
+  border: 2px dashed pink;
+  margin: 20px auto;
+  width: 60%;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.page:not(.hidden) {
+  display: block;
+}
+
+button {
+  background-color: pink;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 15px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.main-img {
+  width: 200px;
+  border-radius: 20px;
+  margin-bottom: 15px;
+  transition: transform 0.2s ease;
+   box-shadow: 0 4px 12px rgba(255, 110, 180, 0.3);
+}
+
+
+.main-img:hover {
+  transform: scale(1.08);
+}
+
+button {
+  background-color: #ff6eb4;
+  color: white; /* Makes button text white */
+  font-family: 'Comic Sans MS', cursive; /* Match overall font */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 15px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.08);
+}
+
+.pretty {
+  width: 300px; /* or any size you prefer */
+   border-radius: 20px;
+  margin-bottom: 15px;
+  transition: transform 0.2s ease;
+   box-shadow: 0 4px 12px rgba(255, 110, 180, 0.3);
+}
+
+.pretty:hover {
+  transform: scale(1.08); /* Keeps the same hover effect */
+}
+</style>
+
+<script>
+function goToPage(num) {
+  document.querySelectorAll('.page').forEach(p => p.classList.add('hidden'));
+  document.getElementById(`page${num}`).classList.remove('hidden');
+}
+</script>
